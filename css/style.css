@@ -16,7 +16,7 @@ body {
     color: #000;
     text-transform: uppercase;
 
-    background-color: #fff;
+    background-color: #f1f1f1;
     background-image: url(../img/background-photo.jpg);
     background-position: top center;
     background-repeat: no-repeat;
@@ -184,6 +184,121 @@ img {
     padding-top: 36px;
     padding-bottom: 55px;
 }
+
+.features__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.feature-1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+}
+
+.feature-1 .description-1 {
+    width: 400px;
+    background-color: #81b3d2;
+}
+
+.description-1 h3 {
+    display: block;
+    padding: 0;
+    margin: 0;
+
+    width: 240px;
+
+    margin: 0 auto;
+    padding-top: 46px;
+    padding-bottom: 23px;
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    color: #fff;
+}
+
+.description-1 span {
+    padding: 0; /*На всякий случай*/
+    margin: 0;
+    display: block;
+
+    margin: 0 auto;
+    padding-bottom: 25px;
+
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+}
+
+.description-1 p {
+    padding: 0; /*На всякий случай*/
+    margin: 0;
+    display: block;
+
+    margin: 0 auto;
+    padding-bottom: 60px;
+
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+}
+
+.feature-1 .content__picture-right {
+    width: 800px;
+    background-image: url(../img/content__right-img.jpg);
+    background-position: 0 0;
+}
+
+
+.housing,
+.food,
+.souvenirs {
+    width: 400px;
+    background-color: #fff;
+}
+
+.housing h3,
+.food h3,
+.souvenirs h3 {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    padding-top: 168px;
+    padding-bottom: 30px;
+    text-align: center;
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 21px;
+    line-height: 21px;
+}.housing p,
+.food p,
+.souvenirs p {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 83px;
+    text-align: center;
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #333333;
+}
+
 
 .modal-search-form {
     display: none;
