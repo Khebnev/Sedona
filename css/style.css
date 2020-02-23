@@ -147,9 +147,43 @@ img {
     height: 80px;
 }
 
+/*features*/
 
+.features-header {
+    background-color: #fff;
+}
+.features-header h2{
+    padding: 0;
+    margin: 0;
+    margin: 0 auto;
+    display: block;
+    width: 576px;
 
+    font-family: 'PT Sans', sans-serif;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
 
+    padding-top: 60px;
+
+}
+
+.features-header p {
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    width: 576px;
+    text-align: center;
+
+    display: block;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+
+    padding-top: 36px;
+    padding-bottom: 55px;
+}
 
 .modal-search-form {
     display: none;
