@@ -8,7 +8,6 @@
 <body>
 
     <header class="main-header">
-      <div class="outro">
             <nav class="main-navigation">
                 <a href="" class="main-header-logo">
                     <img src="img/logo.png" alt="Логотип Sedona">
@@ -20,13 +19,19 @@
                     <li>Гостиницы</li>
                 </ul>
             </nav>
-        </div>
     </header>
+
+    <div class="outro">
+        <img src="img/Welcome.png" alt="welcome">
+        <img src="img/to-the-gorgeous.png" alt="to the gorgeous">
+        <img src="img/Sedona__outro.png" alt="Sedona"> <!-- Может лучше подобрать текстом -->
+        <img src="img/Because-the-Grand-Canyon-sucks.png" alt="Because-the-Grand-Canyon-sucks">
+    </div>
+
     <main class="container">
         <div class="content">
             <section class="features-header">
-                <h2>СЕДОНА — небольшой городок в АРИЗОНЕ,
-зАСЛУЖИвающий большего!
+                <h2>СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!
 </h2>
                 <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
             </section>
@@ -106,5 +111,59 @@
             </ul>
         </div>
     </main>
+    <section class="search-form-title">
+        <h2>Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="button button-search">
+            Поиск гостиницы в Седоне
+        </button>
+    </section>
+
+   <div class="map-container">
+       <div class="part-map"></div>
+       <footer class="main-footer">
+           <h3 class="visit-sedona">#visitsedona</h3>
+           <ul class="social-list">
+               <li class="social-item">
+                    <img src="img/twitter.svg" alt="Twitter">
+               </li>
+               <li class="social-item">
+                    <img src="img/fb.svg" alt="Facebook">
+               </li>
+               <li class="social-item">
+                    <img src="img/youtube.svg" alt="YouTube">
+               </li>
+           </ul>
+           <p class="academy">
+               <img src="img/logo_name.svg" alt="HTML Academy">
+           </p>
+       </footer>
+   </div>
+
+
+
+
+    <section class="modal-search-form">
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <form class="search-form" method="get" action="echo.htmlacademy.ru">
+            <p class="arrival-date">
+                <label for="">Дата заезда:</label>
+                <input type="date">
+            </p>
+            <p class="date-of-departure">
+                <label for="">Дата выезда:</label>
+                <input type="date">
+            </p>
+            <p class="adults">
+                <label for="">Взрослые:</label>
+                <input type="number">
+            </p>
+            <p class="children">
+                <label for="">Дети:</label>
+                <input type="number">
+            </p>
+            <button type="submit">Найти</button>
+        </form>
+    </section>
 </body>
 </html>
