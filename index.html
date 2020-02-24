@@ -11,18 +11,18 @@
     <header class="main-header container">
             <nav class="main-navigation">
                 <div class="menu-flex-container">
-                    <ul class="site-navigation site-navigation-left">
-                        <li>
-                            <a href="#">Информация</a>
+                   <a href="#" class="main-header-logo">
+                        <img src="img/logo.png" alt="Логотип Sedona">
+                    </a>
+                    <ul class="site-navigation site-navigation-left ">
+                        <li class="site-navigation-current">
+                            <a class="link__info " href="#">Информация</a>
                         </li>
                         <li>
                             <a href="#">Фото и видео</a>
                         </li>
                     </ul>
-                    <a href="#" class="main-header-logo">
-                        <img src="img/logo.png" alt="Логотип Sedona">
-                    </a>
-                    <ul class="site-navigation ">
+                    <ul class="site-navigation site-navigation-right">
                         <li>
                             <a href="#">Карта штата</a>
                         </li>
@@ -184,22 +184,24 @@
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <form class="search-form" method="get" action="echo.htmlacademy.ru">
             <p class="arrival-date">
-                <label for="">Дата заезда:</label>
-                <input type="date">
+                <label for="form__arrival-date">Дата заезда:</label>
+                <input class="date__calendar" name="name__arrival-date" id="form__arrival-date" type="date">
             </p>
             <p class="date-of-departure">
-                <label for="">Дата выезда:</label>
-                <input type="date">
+                <label for="form__date-of-departure">Дата выезда:</label>
+                <input class="date__calendar" name="name__date-of-departure" id="form__date-of-departure" type="date">
             </p>
-            <p class="adults">
-                <label for="">Взрослые:</label>
-                <input type="number">
-            </p>
-            <p class="children">
-                <label for="">Дети:</label>
-                <input type="number">
-            </p>
-            <button type="submit">Найти</button>
+            <div class="adults-children__container">
+                <p class="adults">
+                    <label for="form__adults">Взрослые:</label>
+                    <input class="people" name="name__adults" id="form__adults" type="number" placeholder="0">
+                </p>
+                <p class="children">
+                    <label for="form__children">Дети:</label>
+                    <input class="people" name="name__children" id="form__childen" type="number" placeholder="0">
+                </p>
+            </div>
+            <button class="button__form" type="submit">Найти</button>
         </form>
     </section>
 </body>

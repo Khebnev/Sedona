@@ -75,31 +75,53 @@ img {
     width: 1200px;
     align-items: center;
     background-color: #fff;
+    justify-content: space-between;
 }
 
 .main-navigation {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     width: 1200px;
 }
 
 .main-header-logo {
+    position: absolute;
     width: 244px;
+/*    height: 70px;*/
     text-align: center;
+    left: 478px;
 }
-
 
 .site-navigation {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     list-style: none;
     margin: 0;
     padding: 0;
 
-    width: 478px;
+    width: 1200px;
 }
+
+
+.site-navigation-left{
+    display: flex;
+    flex-wrap: wrap;
+    width: 478px;
+    align-content: flex-start;
+}
+.site-navigation-right {
+    display: flex;
+    flex-wrap: wrap;
+    width: 478px;
+    align-content: flex-end;
+}
+
 .site-navigation li {
     width: 239px;
     text-align: center;
+    padding: 15px 0;
 }
 .site-navigation a {
     cursor: pointer;
@@ -109,7 +131,18 @@ img {
     font-family: 'PT Sans', sans-serif;
     font-size: 14px;
     line-height: 26px;
-    padding: 15px 0;
+
+}
+
+.link__info:hover {
+    color: #a3c7de;
+}
+.link__info:active {
+    color: #b2b2b2;
+}
+
+.site-navigation-current a {
+    color: #766357;
 }
 
 /*outro*/
@@ -512,11 +545,50 @@ img {
     color: #fff;
     font-weight: 700;
 
+    background-color: #766357;
+
     padding: 30px 0;
     margin: 0 auto;
 
     cursor: pointer;
 }
+.search-form-title .button-search:hover {
+    width: 568px;
+    display: block;
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+
+    background-color: #604e43;
+
+    padding: 30px 0;
+    margin: 0 auto;
+
+    cursor: pointer;
+}
+.search-form-title .button-search:active {
+    width: 568px;
+    display: block;
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    color: #857871;
+    font-weight: 700;
+
+    background-color: #503e33;
+
+    padding: 30px 0;
+    margin: 0 auto;
+
+    cursor: pointer;
+}
+
 
 .map-container {
     padding-top: 472px;
@@ -623,8 +695,177 @@ img {
 
 }
 
-
+/*modal*/
 
 .modal-search-form {
     display: none;
+    background-color: #fff;
+    width: 568px;
+/*    min-height: 394px;*/
+
+}
+.search-form {
+    box-sizing: border-box;
+    padding-left: 55px;
+}
+
+
+.search-form p {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+/*
+.search-form input[type="date"] {
+    width: 114px;
+}
+*/
+
+.search-form .arrival-date {
+    padding-top: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 458px;
+}
+
+.search-form .date-of-departure {
+    padding-top: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 458px;
+}
+
+.arrival-date input {
+    width: 345px;
+    box-sizing: border-box;
+    padding: 6px 0;
+    padding-right: 40px;
+
+    border: none;
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    background-color: #f2f2f2;
+
+
+}
+.date-of-departure input {
+    width: 345px;
+    box-sizing: border-box;
+    padding: 6px 0;
+    padding-right: 40px;
+    border: none;
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    background-color: #f2f2f2;
+
+}
+
+.arrival-date input:hover,
+.date-of-departure input:hover {
+    background-color: #ebebeb;
+}
+.arrival-date input:active,
+.date-of-departure input:active {
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 2px solid #e5e5e5;
+    padding: 4px 0;
+}
+
+.date__calendar {
+    position: relative;
+}
+.date__calendar::before {
+    content: "";
+    position: absolute;
+
+    width: 21px;
+    height: 22px;
+    background-image: url(../img/calendar.svg);
+    left: 312px;
+}
+
+.search-form .date-of-departure {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.adults-children__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 513px;
+    padding-bottom: 55px;
+}
+
+.search-form .adults {
+    width: 230px;
+    display: block;
+}
+.search-form .children {
+    width: 216px;
+    display: block;
+}
+
+.adults input,
+.children input {
+    width: 114px;
+    box-sizing: border-box;
+    border: none;
+
+/*    padding-right: 40px;*/
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+/*
+.people {
+    position: relative;
+}
+
+.people::before {
+    content: "";
+    position: absolute;
+
+    width: 21px;
+    height: 22px;
+    background-image: url(../img/calendar.svg);
+}
+*/
+
+.search-form .button__form {
+    display: block;
+/*    box-sizing: border-box;*/
+    font-family: 'PT Sans', sans-serif;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+
+    width: 458px;
+    padding: 16px 0;
+
+    border: none;
+    background-color: #766357;
 }
