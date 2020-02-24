@@ -562,10 +562,17 @@ img {
 .social-item {
     position: relative;
     width: 46px;
-    height: 48px;
+    min-height: 48px;
 
     background-color: #81b3d2;
 }
+
+.social-item a {
+    display: block;
+    width: 46px;
+    min-height: 48px;
+}
+
 .tw img {
     position: absolute;
     top: 15px;
