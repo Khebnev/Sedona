@@ -263,8 +263,45 @@ img {
 .housing,
 .food,
 .souvenirs {
+    position: relative;
     width: 400px;
     background-color: #fff;
+}
+.housing::before{
+    position: absolute;
+
+    content: "";
+    width: 75px;
+    height: 72px;
+    top: 60px;
+    left: 162px;
+
+    background-image: url(../img/content__icon-1.svg);
+    background-repeat: no-repeat;
+}
+.food::before{
+    position: absolute;
+
+    content: "";
+    width: 74px;
+    height: 71px;
+    top: 61px;
+    left: 161px;
+
+    background-image: url(../img/content__icon-2.svg);
+    background-repeat: no-repeat;
+}
+.souvenirs::before{
+    position: absolute;
+
+    content: "";
+    width: 64px;
+    height: 76px;
+    top: 56px;
+    left: 168px;
+
+    background-image: url(../img/content__icon-3.svg);
+    background-repeat: no-repeat;
 }
 
 .housing h3,
