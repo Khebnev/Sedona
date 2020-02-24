@@ -491,7 +491,7 @@ img {
 .main-footer {
     display: flex;
     flex-wrap: wrap;
-    background-color: #333333;
+    background-color: #fff;
     box-sizing: border-box;
     padding: 0 73px;
     align-items: center;
