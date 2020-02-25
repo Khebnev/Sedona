@@ -867,5 +867,37 @@ img {
     padding: 16px 0;
 
     border: none;
-    background-color: #766357;
+    background-color: #81b3d2;
+}
+.search-form .button__form:hover {
+    display: block;
+/*    box-sizing: border-box;*/
+    font-family: 'PT Sans', sans-serif;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+
+    width: 458px;
+    padding: 16px 0;
+
+    border: none;
+    background-color: #669ec0;
+}
+.search-form .button__form:active {
+    display: block;
+/*    box-sizing: border-box;*/
+    font-family: 'PT Sans', sans-serif;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+
+    width: 458px;
+    padding: 16px 0;
+
+    border: none;
+    background-color: #5496bd;
 }
