@@ -22,6 +22,24 @@ body {
     background-repeat: no-repeat;
 }
 
+.body-inner {
+    min-height: 800px;
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+
+    background-color: #f1f1f1;
+    background-image: url(../img/filter-background.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
 .visually-hidden {
     position: absolute;
 
@@ -901,3 +919,132 @@ img {
     border: none;
     background-color: #5496bd;
 }
+
+
+/*     Страница отолей     */
+
+.filter {
+    box-sizing: border-box;
+    padding: 0 73px;
+}
+
+.filter-left-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 528px;
+}
+
+.filter-left {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    min-height: 216px;
+
+    margin-top: 30px;
+/*    justify-content: center;*/
+}
+
+.filter-right {
+    width: 288px;
+    display: flex;
+    flex-direction: column;
+    min-height: 216px;
+
+    margin-top: 30px;
+}
+
+.filter fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.filter legend {
+    padding: 0;
+    margin: 0;
+    display: block;
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    color: #fff;
+}
+
+.infrastructure__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.infrastructure__list li {
+    color: #fff;
+}
+.infrastructure__list li:first-child {
+    margin-top: 25px;
+    margin-bottom: 22px;
+}
+.infrastructure__list li:last-child {
+    margin-top: 22px;
+    margin-bottom: 31px;
+}
+
+.type-housing__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.type-housing__list li {
+    color: #fff;
+}
+.type-housing__list li:first-child {
+    margin-top: 25px;
+    margin-bottom: 22px;
+}
+.type-housing__list li:last-child {
+    margin-top: 22px;
+    margin-bottom: 31px;
+}
+
+
+.filter-checkbox{
+    position: relative;
+    display: flex;
+/*    box-sizing: border-box;*/
+/*    align-items: center;*/
+    padding-left: 40px;
+
+    cursor: pointer;
+}
+
+.filter-checkbox input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/checkbox-off.svg);
+}
+
+.filter-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+    border-color: #4d4d4d    ;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.filter-checkbox input[type="checkbox"]:hover + .checkbox-indicator {
+    background-image: url(../img/checkbox-on.svg);
+}
+
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+    background-image: url(../img/checkbox-on.svg);
+    opacity: 0.1;
+}
+

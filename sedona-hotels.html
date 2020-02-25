@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="body-inner">
 
     <header class="main-header container">
         <nav class="main-navigation">
@@ -15,7 +15,7 @@
                     <img src="img/logo.png" alt="Логотип Sedona">
                 </a>
                 <ul class="site-navigation site-navigation-left ">
-                    <li class="site-navigation-current">
+                    <li>
                         <a class="link__info " href="#">Информация</a>
                     </li>
                     <li>
@@ -26,7 +26,7 @@
                     <li>
                         <a href="#">Карта штата</a>
                     </li>
-                    <li>
+                    <li class="site-navigation-current">
                         <a href="#">Гостиницы</a>
                     </li>
                 </ul>
@@ -34,12 +34,75 @@
         </nav>
     </header>
 
+    <section class="filters container">
+        <h2 class="visually-hidden">Фильтры выбора отеля</h2>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <div class="filter-left-container">
+                <fildset class="filter-left">
+                    <legend class="infrastructure">
+                        Инфраструктура:
+                    </legend>
+                    <ul class="infrastructure__list">
+                        <li>
+                            <label class="infrastructure-checkbox filter-checkbox">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="infrastructure-checkbox-input">
+                                <span class="checkbox-indicator"></span>
+                                    Бассейн
+                            </label>
+                        </li>
+                        <li>
+                            <label class="infrastructure-checkbox filter-checkbox">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="infrastructure-checkbox-input">
+                                <span class="checkbox-indicator"></span>
+                                    Парковка
+                            </label>
+                        </li>
+                        <li>
+                            <label class="infrastructure-checkbox filter-checkbox">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="infrastructure-checkbox-input">
+                                <span class="checkbox-indicator"></span>
+                                    Wi-Fi
+                            </label>
+                        </li>
+                    </ul>
+                </fildset>
+                <fildset class="filter-right">
+                    <legend class="type-housing">
+                        Тип жилья:
+                    </legend>
+                    <ul class="type-housing__list">
+                        <li>
+                            <label class="filter-checkbox">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="infrastructure-checkbox-input">
+                                <span class="checkbox-indicator"></span>
+                                    Гостиница
+                            </label>
+                        </li>
+                        <li>
+                            <label class="filter-checkbox">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="infrastructure-checkbox-input">
+                                <span class="checkbox-indicator"></span>
+                                    Мотель
+                            </label>
+                        </li>
+                        <li>
+                            <label class="filter-checkbox">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="infrastructure-checkbox-input">
+                                <span class="checkbox-indicator"></span>
+                                    Апартаменты
+                            </label>
+                        </li>
+                    </ul>
+                </fildset>
+            </div>
+
+        </form>
+    </section>
 
 
 
 
-
-   <footer class="main-footer">
+   <footer class="main-footer container">
        <h3 class="visit-sedona">#visitsedona</h3>
        <div class="social-list__wrapper">
            <ul class="social-list">
