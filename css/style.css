@@ -1188,19 +1188,108 @@ img {
 
 .menu-sort {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+/*    align-items: center;*/
+}
+
+.sort-left__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 528px;
+    align-items: center;
+}
+
+.menu-sort .found{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-right: 50px;
+}
+.menu-sort .sort-word {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+
+    margin-right: 40px;
 }
 
 .menu-sort__list {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
+    flex-basis: 238px;
+    justify-content: space-between;
 }
+
+.menu-sort__list li {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+}
+.menu-sort__list a {
+    position: relative;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #c6c6c6;
+    border-bottom: 1px dotted #81b3d2;
+    padding-bottom: 5px;
+}
+
+
+.menu-sort__item_current a{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #81b3d2;
+    border: none;
+}
+
+.sort-right__container {
+    display: flex;
+    flex-basis: 30px;
+    align-items: center;
+}
+
 
 
 .up-down {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
+    flex-basis: 30px;
+    justify-content: space-between;
 }
+/*
+.up-down li{
+
+}
+*/
+/*
+.up-down a{
+    display: block;
+    width: 10px;
+    height: 10px;
+}
+.up-down a:first-child{
+    display: block;
+    width: 10px;
+    height: 10px;
+*/
+}
+
+
+/*
 .up-down::before {
     position: absolute;
     content: "";
@@ -1209,6 +1298,7 @@ img {
     height: 10px;
 
     background-image: url(../img/icon-down-dir.svg);
+    right: 20px;
 }
 .up-down::after {
     position: absolute;
@@ -1222,3 +1312,4 @@ img {
     top: 2px;
     left: 10px;
 }
+*/

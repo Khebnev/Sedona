@@ -117,17 +117,25 @@
        <div class="hotels-container">
              <section class="menu-sort">
                <h2 class="visually-hidden">Меню сортировки</h2>
-                <b>Найдено 3:</b>
-                <b>Сортировка:</b>
-                <ul class="menu-sort__list">
-                    <li><a href="#">По цене</a></li>
-                    <li><a href="#">По типу</a></li>
-                    <li><a href="#">По рейтингу</a></li>
-                </ul>
-                <ul class="menu-sort__list sort-list up-down">
-                    <li></li>
-                    <li></li>
-                </ul>
+                <div class="sort-left__container">
+                    <b class="found">Найдено 3:</b>
+                    <b class="sort-word">Сортировка:</b>
+                    <ul class="menu-sort__list">
+                        <li class="menu-sort__item menu-sort__item_current"><a href="#">По цене</a></li>
+                        <li class="menu-sort__item"><a href="#">По типу</a></li>
+                        <li class="menu-sort__item"><a href="#">По рейтингу</a></li>
+                    </ul>
+                </div>
+                <div class="sort-right__container">
+                    <ul class="sort-list up-down">
+                        <li>
+                            <a href="#"><img src="img/icon-down-dir.svg" alt="down"></a>
+                        </li>
+                        <li><a href="#">
+                            <img src="img/icon-up-dir.svg" alt="up">
+                        </a></li>
+                    </ul>
+                </div>
             </section>
             <section class="hotels-list">
                 <h1 class="visually-hidden">Список отолей</h1>
