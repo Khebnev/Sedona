@@ -1033,8 +1033,8 @@ img {
     top: 0;
     left: 0;
 
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
     background-image: url(../img/checkbox-off.svg);
 }
 
@@ -1175,4 +1175,49 @@ img {
     width: 133px;
     box-sizing: border-box;
     border: 2px solid #fff;
+}
+
+.main--inner {
+    background-color: #fff;
+}
+.hotels-container {
+    padding: 0 73px;
+    box-sizing: border-box;
+}
+
+.menu-sort {
+    display: flex;
+}
+
+.menu-sort__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.up-down {
+    position: relative;
+}
+.up-down::before {
+    position: absolute;
+    content: "";
+
+    width: 10px;
+    height: 10px;
+
+    background-image: url(../img/icon-down-dir.svg);
+}
+.up-down::after {
+    position: absolute;
+    content: "";
+
+    width: 10px;
+    height: 10px;
+
+    background-image: url(../img/icon-up-dir.svg);
+
+    top: 2px;
+    left: 10px;
 }
