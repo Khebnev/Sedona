@@ -1175,6 +1175,7 @@ img {
     width: 133px;
     box-sizing: border-box;
     border: 2px solid #fff;
+    background-color: transparent;
 }
 
 .main--inner {
