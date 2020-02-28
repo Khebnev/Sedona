@@ -656,11 +656,31 @@ img {
 
     background-color: #81b3d2;
 }
+.social-item:hover {
+    position: relative;
+    width: 46px;
+    min-height: 48px;
+
+    background-color: #669ec0;
+}
+.social-item:active {
+    position: relative;
+    width: 46px;
+    min-height: 48px;
+
+    background-color: #5496bd;
+}
 
 .social-item a {
     display: block;
     width: 46px;
     min-height: 48px;
+}
+.social-item a:active {
+    display: block;
+    width: 46px;
+    min-height: 48px;
+    opacity: 0.5;
 }
 
 .tw img {
@@ -709,8 +729,12 @@ img {
     font-family: 'PT Sans', sans-serif;
     font-size: 14px;
     line-height: 26px;
+}
 
-
+.logo-html-academy path:hover {
+    fill: #090;
+    width: 113px;
+    height: 39px;
 }
 
 /*modal*/
