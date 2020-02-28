@@ -553,6 +553,7 @@ img {
 }
 
 .search-form-title .button-search {
+    position: relative;
     width: 568px;
     display: block;
 
@@ -743,13 +744,29 @@ img {
 
 /*modal*/
 
+.modal {
+    position: absolute;
+/*    display: none;*/
+}
+
 .modal-search-form {
+    top: 2195px;
+    left: 50%;
+
     display: none;
+
     background-color: #fff;
     width: 568px;
-/*    min-height: 394px;*/
-
+    min-height: 394px;
+    margin-left: -284px;
 }
+
+.modal-show {
+    display: block;
+    animation-name: bounce;
+    animation-duration: 1.5s;
+}
+
 .search-form {
     box-sizing: border-box;
     padding-left: 55px;
@@ -1205,6 +1222,21 @@ img {
     border: 2px solid #fff;
     background-color: transparent;
 }
+.filter-right-container .button-show:hover {
+    display: block;
+    margin: 0 auto;
+    margin-top: 22px;
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000;
+    padding: 5px;
+    width: 133px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    background-color: #fff;
+}
 
 .main--inner {
     background-color: #fff;
@@ -1434,6 +1466,30 @@ img {
     line-height: 26px;
     font-weight: 700;
 }
+.hotel-info h2:hover{
+    padding: 0;
+    margin: 0;
+    width: 365px;
+    display: block;
+    color: #81b3d2;
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+.hotel-info h2:active{
+    padding: 0;
+    margin: 0;
+    width: 365px;
+    display: block;
+    color: #b2b2b2;
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
 
 
 .hotel-list__type {
@@ -1492,10 +1548,35 @@ img {
     width: 110px;
     margin-right: 6px;
 }
+.hotel__buttons .hotel__button_details:hover {
+    background-color: #669ec0;
+    padding: 6px 0;
+    width: 110px;
+    margin-right: 6px;
+}
+.hotel__buttons .hotel__button_details:active {
+    background-color: #5496bd;
+    padding: 6px 0;
+    width: 110px;
+    margin-right: 6px;
+    color: #88b6d1;
+}
+
 .hotel__buttons .hotel__button_reservation {
     background-color: #766357;
     padding: 6px 0;
-    width: 142px;;
+    width: 142px;
+}
+.hotel__buttons .hotel__button_reservation:hover {
+    background-color: #604e43;
+    padding: 6px 0;
+    width: 142px;
+}
+.hotel__buttons .hotel__button_reservation:active {
+    background-color: #503e33;
+    padding: 6px 0;
+    width: 142px;
+    color: #857871;
 }
 
 
@@ -1526,4 +1607,9 @@ img {
 
     text-align: center;
     background-color: #eee;
+}
+
+@keyframes bounce {
+    0% { transform: translateX(-2000px); }
+    100% { transform: translateX(0); }
 }
