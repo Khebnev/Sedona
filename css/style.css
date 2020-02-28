@@ -152,10 +152,10 @@ img {
 
 }
 
-.link__info:hover {
+.site-navigation a:hover {
     color: #a3c7de;
 }
-.link__info:active {
+.site-navigation a:active {
     color: #b2b2b2;
 }
 
@@ -731,11 +731,15 @@ img {
     line-height: 26px;
 }
 
+
+
+/*
 .logo-html-academy path:hover {
     fill: #090;
     width: 113px;
     height: 39px;
 }
+*/
 
 /*modal*/
 
@@ -1266,6 +1270,25 @@ img {
     color: #c6c6c6;
     border-bottom: 1px dotted #81b3d2;
     padding-bottom: 5px;
+}
+.menu-sort__list a:hover {
+    position: relative;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #81b3d2;
+    border-bottom: 1px dotted #81b3d2;
+    padding-bottom: 5px;
+}
+.menu-sort__list a:active {
+    position: relative;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #000;
+    border: none;
 }
 
 
